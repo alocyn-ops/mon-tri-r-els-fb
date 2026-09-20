@@ -54,7 +54,7 @@ let data=[
 
 // Gestion de la mémoire locale du Chromebook (historique futur)
 let localSaved = JSON.parse(localStorage.getItem('tri88final') || '[]');
-if(localSaved.length > 88) {
+if(localSaved.length >= 88) {
     data = localSaved;
 }
 
